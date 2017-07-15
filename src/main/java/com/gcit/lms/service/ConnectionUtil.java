@@ -7,9 +7,9 @@ import java.sql.SQLException;
 public class ConnectionUtil {
 
 	public String driver = "com.mysql.cj.jdbc.Driver";
-	public String url = "jdbc:mysql://gcitsampledb.cbhdojzwpgzp.us-east-2.rds.amazonaws.com:3306/library?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-	public String username = "gcitsampledb";
-	public String password = "gcitsampledb";
+	public String url = "jdbc:mysql://awsdatabase.cswmfnxnrnuj.us-east-1.rds.amazonaws.com:3306/library?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+	public String username = "awsdatabase";
+	public String password = "awsdatabase";
 
 	public Connection getConnection() {
 		Connection conn = null;
