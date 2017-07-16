@@ -26,26 +26,14 @@ import com.gcit.lms.entity.Author;
 import com.gcit.lms.entity.Book;
 import com.gcit.lms.entity.BookLoans;
 import com.gcit.lms.entity.LibraryBranch;
-import com.gcit.lms.service.AdminService;
-import com.gcit.lms.service.BorrowerService;
-import com.gcit.lms.service.LibrarianService;
 
 /**
  * Handles requests for the application home page.
  */
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping(value = "/admin")
 public class AdminController {
-
-	@Autowired
-	AdminService adminService;
-
-	@Autowired
-	BorrowerService borrowerService;
-
-	@Autowired
-	LibrarianService librarianService;
 
 	@Autowired
 	AuthorDAO adao;
@@ -275,10 +263,6 @@ public class AdminController {
 
 	// /////////////////////////////////////////////Borrower
 	// Methods/////////////////////////////////////////////////////////
-	
-	
-	
-	
 
 	///////////////////////////////////////////////Override
 	//Method/////////////////////////////////////////////////////////

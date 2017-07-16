@@ -19,9 +19,6 @@ import com.gcit.lms.dao.BookDAO;
 import com.gcit.lms.dao.LibraryBranchDAO;
 import com.gcit.lms.entity.BookLoans;
 import com.gcit.lms.entity.LibraryBranch;
-import com.gcit.lms.service.AdminService;
-import com.gcit.lms.service.BorrowerService;
-import com.gcit.lms.service.LibrarianService;
 
 /**
  * Handles requests for the application home page.
@@ -30,15 +27,6 @@ import com.gcit.lms.service.LibrarianService;
 @RestController
 @RequestMapping(value = "/librarian")
 public class LibrarianController {
-	
-	@Autowired
-	AdminService adminService;
-	
-	@Autowired
-	BorrowerService borrowerService;
-	
-	@Autowired
-	LibrarianService librarianService;
 	
 	@Autowired
 	AuthorDAO adao;

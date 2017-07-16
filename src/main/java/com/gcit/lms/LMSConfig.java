@@ -17,9 +17,6 @@ import com.gcit.lms.entity.Author;
 import com.gcit.lms.entity.Book;
 import com.gcit.lms.entity.BookLoans;
 import com.gcit.lms.entity.LibraryBranch;
-import com.gcit.lms.service.AdminService;
-import com.gcit.lms.service.BorrowerService;
-import com.gcit.lms.service.LibrarianService;
 @Configuration
 public class LMSConfig {
 	public String driver = "com.mysql.jdbc.Driver";
@@ -39,18 +36,7 @@ public class LMSConfig {
 	public JdbcTemplate template(){
 		return new JdbcTemplate(dataSource());
 	}
-	@Bean
-	public AdminService adminService(){
-		return new AdminService();
-	}
-	@Bean
-	public BorrowerService borrowerService(){
-		return new BorrowerService();
-	}
-	@Bean
-	public LibrarianService librarianService(){
-		return new LibrarianService();
-	}
+	
 	@Bean
 	public AuthorDAO adao(){
 		return new AuthorDAO();

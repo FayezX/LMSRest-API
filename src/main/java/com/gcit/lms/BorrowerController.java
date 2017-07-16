@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.gcit.lms.dao.AuthorDAO;
@@ -20,9 +19,6 @@ import com.gcit.lms.dao.BorrowerDAO;
 import com.gcit.lms.dao.LibraryBranchDAO;
 import com.gcit.lms.entity.BookLoans;
 import com.gcit.lms.entity.LibraryBranch;
-import com.gcit.lms.service.AdminService;
-import com.gcit.lms.service.BorrowerService;
-import com.gcit.lms.service.LibrarianService;
 
 /**
  * Handles requests for the application home page.
@@ -31,15 +27,6 @@ import com.gcit.lms.service.LibrarianService;
 @RestController
 @RequestMapping(value = "/borrower")
 public class BorrowerController {
-	
-	@Autowired
-	AdminService adminService;
-	
-	@Autowired
-	BorrowerService borrowerService;
-	
-	@Autowired
-	LibrarianService librarianService;
 	
 	@Autowired
 	AuthorDAO adao;
