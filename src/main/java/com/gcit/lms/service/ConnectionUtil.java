@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionUtil {
+	/*
 
 	public String driver = "com.mysql.cj.jdbc.Driver";
 	//public String url = "jdbc:mysql://localhost/library?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
@@ -25,5 +26,6 @@ public class ConnectionUtil {
 		}
 		return conn;
 	}
+	*/
 
 }

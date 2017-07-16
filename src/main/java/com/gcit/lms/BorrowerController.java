@@ -23,7 +23,7 @@ import com.gcit.lms.entity.LibraryBranch;
 /**
  * Handles requests for the application home page.
  */
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping(value = "/borrower")
 public class BorrowerController {
