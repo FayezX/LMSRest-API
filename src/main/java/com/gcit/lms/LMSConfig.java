@@ -20,9 +20,9 @@ import com.gcit.lms.entity.LibraryBranch;
 @Configuration
 public class LMSConfig {
 	public String driver = "com.mysql.jdbc.Driver";
-	public String url = "jdbc:mysql://databasetest2.cswmfnxnrnuj.us-east-1.rds.amazonaws.com:3306/library?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-	public String username = "databasetest2";
-	public String password = "databasetest2";
+	public String url = "jdbc:mysql://lmsdatabase.cswmfnxnrnuj.us-east-1.rds.amazonaws.com:3306/library?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+	public String username = "lmsdatabase";
+	public String password = "lmsdatabase";
 	
 	public BasicDataSource dataSource(){
 		BasicDataSource ds = new BasicDataSource();
